@@ -14,6 +14,7 @@ Please ensure to update the `README.md` file with details of any new API endpoin
 Thank you for your cooperation!
 
 
+
 # Preparation
 - Make sure to add environments variables with the following format:
     ```
