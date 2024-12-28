@@ -20,7 +20,7 @@ Thank you for your cooperation!
     ```
 
     ### request parameters: 
-     - body:
+     - Body:
         ```
             {
                 "username": "",
@@ -56,7 +56,7 @@ Thank you for your cooperation!
     ```
 
     ### request parameters: 
-     - body:
+     - Body:
         ```
             {
                 "email": "",
@@ -69,5 +69,46 @@ Thank you for your cooperation!
             {
                 "message": "Log In Successful!",
                 "accessToken": ""
+            }
+        ``` 
+
+
+
+- ## For update profile
+    ```
+        PUT /auth/updateprofile
+    ```
+
+    ### request parameters: 
+
+    - Headers:
+        ```
+            {
+                "_id": "",
+                "username": "",
+                "email": "",
+                "userType": "",
+                "securityQuestion": "",
+                "securityAnswer": ""
+            } 
+        
+        ```
+
+     - Body:
+        ```
+            {
+                "_id": "",
+                "username": "",
+                "email": "",
+                "userType": "",
+                "securityQuestion": "",
+                "securityAnswer": ""
+            } 
+        
+        ```
+    ### response format: 
+        ```
+            {
+                "message": "Update Successful!"
             }
         ``` 
