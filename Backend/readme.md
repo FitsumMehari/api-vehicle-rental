@@ -13,6 +13,14 @@ Please ensure to update the `README.md` file with details of any new API endpoin
 
 Thank you for your cooperation!
 
+
+# Preparation
+- Make sure to add environments variables with the following format:
+    ```
+        MONGODB_URL = 'mongodb://127.0.0.1:27017/gojoye' or
+        MONGODB_URL = '{your url to the mongodb database}' or
+        JWTKEY = '{your preferred random strong key}'
+    ```
 # Endpoints
 - ## For sign up
     ```
@@ -83,9 +91,9 @@ Thank you for your cooperation!
 
     - Headers:
         ```
-            {
-                "token": "bearer {received token}",
-            } 
+            
+            "token": "bearer {received token}"
+            
         
         ```
 
