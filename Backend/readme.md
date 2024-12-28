@@ -18,7 +18,7 @@ Thank you for your cooperation!
 - Make sure to add environments variables with the following format:
     ```
         MONGODB_URL = 'mongodb://127.0.0.1:27017/gojoye' or
-        MONGODB_URL = '{your url to the mongodb database}' or
+        MONGODB_URL = '{your url to the mongodb database}'
         JWTKEY = '{your preferred random strong key}'
     ```
 # Endpoints
