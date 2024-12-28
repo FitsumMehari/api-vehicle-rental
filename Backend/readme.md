@@ -107,3 +107,47 @@ Thank you for your cooperation!
                 "message": "Update Successful!"
             }
         ``` 
+
+- ## For change password
+    ```
+        PUT /auth/changepassword
+    ```
+
+    ### request parameters: 
+     - Body:
+        ```
+            {
+                "email": "",
+                "password": "{new password}",
+                "securityQuestion": "",
+                "securityAnswer": ""
+            } 
+        
+        ```
+    ### response format: 
+        ```
+            {
+                "message": "Password Change Successful!"
+            }
+        ``` 
+
+- ## For getting the security question
+    ```
+        PUT /auth/getSecurityQuestion
+    ```
+
+    ### request parameters: 
+     - Body:
+        ```
+            {
+                "email": ""
+            } 
+        
+        ```
+    ### response format: 
+        ```
+            {
+                "message": "Email Verified!",
+                "securityQuestion": ""
+            }
+        ``` 
