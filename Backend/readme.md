@@ -13,8 +13,8 @@ Please ensure to update the `README.md` file with details of any new API endpoin
 
 Thank you for your cooperation!
 
-### Endpoints
-- For login
+# Endpoints
+- ## For sign up
     ```
         POST /auth/register
     ```
