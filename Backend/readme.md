@@ -92,7 +92,7 @@ Thank you for your cooperation!
      - Body:
         ```
             {
-                "_id": "",
+                "_id": "{recieved id}",
                 "username": "",
                 "email": "",
                 "userType": "",
