@@ -129,18 +129,19 @@ router.put("/updateprofile", verifyToken, async(req, res, next) => {
 
 // Forgot Password
 router.put("/changepassword", async(req, res, next) => {
-    const securityQuestion = req.body.securityQuestion;
-    const securityAnswer = req.body.securityAnswer;
-    console.log(req.body);
 
 
     if (!req.body.securityAnswer ||
         !req.body.password ||
-        !req.body.email
+        !req.body.email ||
+        !req.body.securityQuestio
     ) {
         res.status(400).json("Please fill the required inputs!");
     } else {
         try {
+            const securityQuestion = req.body.securityQuestion;
+            const securityAnswer = req.body.securityAnswer;
+
             const user = await User.findOne({
                 email: req.body.email,
             });
