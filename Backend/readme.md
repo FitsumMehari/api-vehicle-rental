@@ -49,3 +49,25 @@ Thank you for your cooperation!
                 }
             }
         ``` 
+
+- ## For sign in
+    ```
+        POST /auth/login
+    ```
+
+    ### request parameters: 
+     - body:
+        ```
+            {
+                "email": "",
+                "password": ""
+            } 
+        
+        ```
+    ### response format: 
+        ```
+            {
+                "message": "Log In Successful!",
+                "accessToken": ""
+            }
+        ``` 
