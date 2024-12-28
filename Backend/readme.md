@@ -84,12 +84,7 @@ Thank you for your cooperation!
     - Headers:
         ```
             {
-                "_id": "",
-                "username": "",
-                "email": "",
-                "userType": "",
-                "securityQuestion": "",
-                "securityAnswer": ""
+                "token": "bearer {received token}",
             } 
         
         ```
