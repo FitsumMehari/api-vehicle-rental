@@ -12,7 +12,9 @@ const app = express();
 
 app.use(cors()); // Use the cors middleware with your options
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
+const DB_URL = process.env.MONGODB_URL;
+
 app.use(express.json());
 
 const authRoute = require("./routes/auth");
@@ -20,7 +22,7 @@ const authRoute = require("./routes/auth");
 
 // Database connector code
 mongoose
-    .connect(process.env.MONGODB_URL)
+    .connect(DB_URL)
     .then(() => {
         console.log("DB connected successfully!");
     })
